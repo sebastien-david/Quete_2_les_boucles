@@ -10,7 +10,7 @@ namespace quete_2_boucles
     {
         static void Main(string[] args)
         {
-                string[] moves = new string[32];
+                       string[] moves = new string[32];
             for (int i = 0; i < moves.Length; i++)
             {
                 Console.WriteLine("enter dance move : ");
@@ -28,7 +28,17 @@ namespace quete_2_boucles
             int iteration = Int32.Parse(Console.ReadLine());
             for (int i = 0; i < iteration; i++)
             {
-                Console.WriteLine("take the move dance : " + moves[i]);
+              foreach (string move in moves)
+              {
+
+                if (move != null)
+
+                {
+                  Console.WriteLine("take the move dance : " + move);
+                }
+                
+              }
+                
             }
         }
     }
